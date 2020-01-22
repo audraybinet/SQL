@@ -4,6 +4,7 @@
 -- ici le as permet de creer un alias : language = lg.
 -- fw devient frameworks
 -- Dans le langage SQL il est possible d’utiliser des alias pour renommer temporairement une colonne ou une table dans une requête. Cette astuce est particulièrement utile pour faciliter la lecture des requêtes.
+-- Le point (.) est utilisé dans les constantes numériques et pour séparer les noms de schéma, table et colonne.
 SELECT
   `lg`.`name` AS `Language`,
   `fw`.`name` AS `Framework`
@@ -25,7 +26,7 @@ FROM
 --8.3. Afficher le nombre de framework qu'a un langage.En SQL, la fonction d'agrégation COUNT() permet de compter le nombre d'enregistrement dans une table
 -- En SQL, la fonction d'agrégation COUNT() permet de compter le nombre d'enregistrement dans une table
 -- Dans le langage SQL, la commande LEFT JOIN (aussi appelée LEFT OUTER JOIN) est un type de jointure entre 2 tables.
---ela permet de lister tous les résultats de la table de gauche (left = gauche) même s’il n’y a pas de correspondance dans la deuxième tables.
+-- Cela permet de lister tous les résultats de la table de gauche (left = gauche) même s’il n’y a pas de correspondance dans la deuxième tables.
 SELECT
   `lg`.`name` AS `Language`,
   COUNT(`fw`.`languagesId`) AS `NumberOfFramework`

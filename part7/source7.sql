@@ -1,5 +1,6 @@
 -- exo1 partie7
 -- La commande DELETE en SQL permet de supprimer des lignes dans une table. En utilisant cette commande associé à WHERE il est possible de sélectionner les lignes concernées qui seront supprimées.
+-- ROLLBACK REVENIR EN ARRIERE
 DELETE FROM `languages`
 WHERE `language` = 'HTML';
 
